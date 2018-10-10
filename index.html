@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        var frase = prompt("Introdueix una frase: ")
+        var vocals = ["a", "e","i","o","u"]
+        var contador = 0;
+        var fraseSplit = frase.split("")
+        for(var i in fraseSplit){
+            for(var j in vocals){
+                if(vocals[j] == fraseSplit[i]){
+                    contador++;
+                }
+            }
+        }
+        alert("Numero de vocals: "+contador)
+    </script>
 </body>
 </html>
