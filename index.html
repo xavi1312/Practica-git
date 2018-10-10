@@ -10,6 +10,7 @@
     <script>
         var frase = prompt("Introdueix una frase: ")
         var vocals = ["a", "e","i","o","u"]
+        var contadorO = 0;
         var contador = 0;
         var fraseSplit = frase.split("")
         for(var i in fraseSplit){
@@ -18,8 +19,12 @@
                     contador++;
                 }
             }
+            if(fraseSplit[i]=="o"){
+                contadorO++;
+            }
         }
         alert("Numero de vocals: "+contador)
+        alert("Numero de 'o' a la frase: "+contadorO)
     </script>
 </body>
 </html>

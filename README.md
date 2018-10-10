@@ -1,0 +1,1 @@
+Introdueixes una frase i ell et mostre el numero de vocals que conte i el numero de O
